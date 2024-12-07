@@ -5,8 +5,12 @@ class HomeTab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.deepPurpleAccent,
+    return Column(
+      children: [
+         Container(),
+         Container(),
+         Container(),
+      ],
     );
   }
 }

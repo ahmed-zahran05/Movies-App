@@ -3,16 +3,14 @@ import 'package:movies_app/Core/Utills/ColorsManager.dart';
 
 class AppTheme {
   static final ThemeData MyAppTheme = ThemeData(
-    bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+    scaffoldBackgroundColor: ColorsManager.black,
+    canvasColor: ColorsManager.bnBar,
+    bottomNavigationBarTheme:  const BottomNavigationBarThemeData(
+      backgroundColor: ColorsManager.bnBar,
       showSelectedLabels: true,
       showUnselectedLabels: true,
-      backgroundColor: Colors.black,
-      selectedItemColor: ColorsManager.selectedItem,
-      unselectedItemColor: ColorsManager.unSelectedItem,
-      elevation: 20,
-      selectedIconTheme: IconThemeData(
-        size: 36,
-      ),
+      selectedItemColor:  ColorsManager.yellow ,
+      unselectedItemColor: ColorsManager.grey,
     ),
   );
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:movies_app/Config/Theme/Theme.dart';
 import 'package:movies_app/Core/Utills/RoutesManager.dart';
 
 class MyApp extends StatelessWidget {
@@ -15,8 +16,8 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
          routes: RoutesManager.routes ,
          initialRoute: RoutesManager.splash,
-     //   theme: AppTheme.LightTheme,
-    //    themeMode: ThemeMode.light,
+          theme: AppTheme.MyAppTheme,
+         themeMode: ThemeMode.light,
       ),
     );
   }
